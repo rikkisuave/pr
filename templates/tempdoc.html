@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading {{mycon|wordcount}}</h1>
+
+<p>My first paragraph.</p>
+<p>{{my_bod}}</p>
+{% with cat='hjhjjh'%}
+<b><li>{{cat}}</li></b>
+{% endwith %}
+{% if my_bod %}
+ <b><i>LLLLLLLLLLLLLLLLLLLLLLLLLLLLLL</i></b>
+{% endif%}	
+
+<h1>Contact</h1>
+<form role="form" action="" method="post">
+    {% csrf_token %}
+	{{ form.as_p }}
+    <button type="submit">Submit this </button>
+</form>
+
+
+</body>
+</html>
